@@ -1,0 +1,10 @@
+#foo{
+    color:crimson;
+}
+
+#btn-social{
+    background: mistyrose;
+}
+#btn-social:hover{
+    background: rgba(220, 20, 60, 0.274);
+}

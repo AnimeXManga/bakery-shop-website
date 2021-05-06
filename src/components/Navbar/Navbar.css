@@ -1,0 +1,43 @@
+#brand{
+    color: crimson;
+}
+.navbar{
+    background: transparent;
+}
+.navbar.active{
+    background: mistyrose;
+}
+.fa{
+    color: crimson;
+}
+#navItem{
+    color: crimson;
+}
+#navItem:hover{
+    color: rgb(247, 21, 66);
+}
+#navButton{
+    font-size: 16px;
+    outline: none;
+    white-space: nowrap;
+    background: rgba(220, 20, 60, 0.151);
+    border-radius: 50px;
+    border-color: crimson;
+    color: crimson;
+}
+#navButtonActive{
+    font-size: 16px;
+    outline: none;
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 50px;
+    border-color: crimson;
+    color: crimson;
+   
+}
+#navButton:hover{
+    background: rgba(245, 243, 243, 0.151);
+}
+#navButtonActive:hover{
+    background: rgba(253, 26, 26, 0.151);
+}
