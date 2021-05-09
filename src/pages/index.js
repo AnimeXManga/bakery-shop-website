@@ -5,9 +5,11 @@ import Navbar from "../components/Navbar/Navbar";
 import FeatureProduct from "../components/FeaturedProduct";
 import Stickyitem from "../components/StickyItem/stickyitem";
 import Services from "../components/Services";
+import ProductsContainer from "../components/ProductsContainer";
 
 import Contact from "../components/Contact";
 import Team from "../components/Team";
+
 
 const Home = () => {
   return (
@@ -16,7 +18,8 @@ const Home = () => {
       <Navbar />
       <Header />
       <FeatureProduct />
-      <Services />
+      <ProductsContainer/>
+      <Services/>
       <Team />
       <Contact />
       <Footer />

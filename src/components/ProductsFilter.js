@@ -19,8 +19,8 @@ const ProductsFilter = ({ products }) => {
     maxPrice,
     minSize,
     maxSize,
-    breakfast,
-    pets
+    chocolate,
+    cheese
   } = context;
 
   // get unique types
@@ -90,7 +90,7 @@ const ProductsFilter = ({ products }) => {
         {/* size */}
         <div className="form-group">
           <label htmlFor="price">product size </label>
-          <div className="size-inputs">
+          <div className="size-inputs" style={{display: 'block'}}>
             <input
               type="number"
               name="minSize"
@@ -109,31 +109,33 @@ const ProductsFilter = ({ products }) => {
         </div>
         {/* end of select type */}
         {/* extras */}
-        <div className="form-group">
+        <div className="form-group" style={{display: 'flex'}}>
           <div className="single-extra">
             <input
               type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
+              name="chocolate"
+              id="chocolate"
+              checked={chocolate}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">breakfast</label>
+            <label htmlFor="chocolate">chocolate</label>
           </div>
           <div className="single-extra">
             <input
               type="checkbox"
-              name="pets"
-              checked={pets}
+              name="cheese"
+              id="cheese"
+              checked={cheese}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">pets</label>
+            <label htmlFor="cheese">cheese</label>
           </div>
         </div>
         {/* end of extras type */}
       </form>
     </section>
   );
+
 };
 
 export default ProductsFilter;

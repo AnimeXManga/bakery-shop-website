@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import defaultBcg from "../cake3.png";
+import defaultBcg from "../assets/img/wallpaper2.png";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
@@ -42,8 +42,8 @@ export default class SingleProduct extends Component {
       size,
       price,
       extras,
-      breakfast,
-      pets,
+      chocolate,
+      cheese,
       images
     } = product;
     const [main, ...defaultImages] = images;
@@ -78,8 +78,8 @@ export default class SingleProduct extends Component {
                 max capacity :
                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
               </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>{cheese ? "cheese allowed" : "no cheese allowed"}</h6>
+              <h6>{chocolate && "free chocolate included"}</h6>
             </article>
           </div>
         </section>

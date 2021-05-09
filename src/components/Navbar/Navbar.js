@@ -31,7 +31,7 @@ const Navbar = () => {
               className="d-inline-block align-top js-scroll-trigger"
               alt=""
             />
-            Bakery
+            BAKERY
           </a>
           </Link>
           <button
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <Link to="/cart">
+                <Link to="/cart" className="link">
                 <a className="nav-link js-scroll-trigger" href="#cart"id="navItem">
                   Cart
                 </a>

@@ -11,7 +11,7 @@ const Team = () => {
                     Our Amazing Team
                     </h2>
                     <h3 className="section-subheading text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
+                    A small group of only two members.
                     </h3>
                 </div>
             </div>    
@@ -77,9 +77,7 @@ const Team = () => {
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <p className="large text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-                totam corporis ea, alias ut unde.
+              Studied at the university of information technology led by Ms. Nghi as a teacher.
               </p>
             </div>
           </div>

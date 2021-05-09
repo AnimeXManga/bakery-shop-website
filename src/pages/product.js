@@ -15,7 +15,6 @@ const product = () => {
                     </Link>
                 </Banner>
                 </Hero>
-            products
             <ProductsContainer/>
         </div>
     )
