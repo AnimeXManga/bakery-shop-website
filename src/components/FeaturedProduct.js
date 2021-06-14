@@ -1,30 +1,23 @@
-import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
-import Loading from './loading'
-import Product from './Product'
-import Title from './Title'
-import {ProductContext} from '../context'
-
+import React, { Component } from "react";
+import Product from "./Product";
+import Title from "./Title";
+import data from "../data";
 
 class FeaturedProduct extends Component {
-
-  static contextType = ProductContext;
-  render(){
-    let {loading, featuredProducts: products} = this.context;
-
-    products = products.map(product => {
-    return <Product key={product.id} product={product}/>
-   });
-
+  render() {
     return (
       <section className="featured-products">
-        <Title title="featured products"></Title>
+        <Title title="best seller"></Title>
         <div className="featured-products-center">
-          {loading?<Loading/>:products}
+          {data.products.map((item, index) => {
+            if (item.fields.featured === true) {
+              return <Product key={index} product={item} />;
+            }
+          })}
         </div>
       </section>
     );
-  }  
+  }
 }
 
-export default FeaturedProduct
+export default FeaturedProduct;

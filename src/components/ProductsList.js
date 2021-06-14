@@ -1,22 +1,27 @@
-import React from "react";
 import Product from "./Product";
-const ProductsList = ({ products }) => {
-  if (products.length === 0) {
+import data from "../data";
+
+import React, { Component } from "react";
+
+class ProductsList extends Component {
+  render() {
+    if (data.products.length === 0) {
+      return (
+        <div className="empty-search">
+          <h3>unfortunately no products matched your search parameters</h3>
+        </div>
+      );
+    }
     return (
-      <div className="empty-search">
-        <h3>unfortunately no products matched your search parameters</h3>
-      </div>
+      <section className="productslist">
+        <div className="productslist-center">
+          {data.products.map((item, index) => {
+            return <Product key={index} product={item} />;
+          })}
+        </div>
+      </section>
     );
   }
-  return (
-    <section className="productslist">
-      <div className="productslist-center">
-        {products.map(item => {
-          return <Product key={item.id} product={item} />;
-        })}
-      </div>
-    </section>
-  );
-};
+}
 
 export default ProductsList;

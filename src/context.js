@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import items from "./data";
+import data from "./data";
 
 const ProductContext = React.createContext();
 
@@ -24,7 +24,7 @@ class ProductProvider extends Component {
 
   componentDidMount() {
     //this.getdata
-    let products = this.formatData(items);
+    let products = this.formatData(data.products);
     let featuredProducts = products.filter(
       (product) => product.featured === true
     );

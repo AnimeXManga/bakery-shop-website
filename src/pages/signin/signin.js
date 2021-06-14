@@ -51,10 +51,10 @@ const SignInPage = () => {
 		
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links" style={{background: '#beaaba'}}>
-						Don't have an account? <Link to="/signup"><a href="#" class="ml-2" id="textlink">Sign Up</a></Link>
+						Don't have an account? <Link to="/signup"><a href="/" class="ml-2" id="textlink">Sign Up</a></Link>
 					</div>
 					<div class="d-flex justify-content-center links"style={{background: '#beaaba'}}>
-						<a href="#" id="textlink">Forgot your password?</a>
+						<a href="/" id="textlink">Forgot your password?</a>
 					</div>
 				</div>
 			</div>

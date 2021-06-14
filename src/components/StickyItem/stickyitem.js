@@ -1,13 +1,23 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './stickyitem.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./stickyitem.css";
 const stickyitem = () => {
-    return (
-        <>
-          <Link to="/cart"><div class="cart"><a href="#"><i class="fa fa-shopping-cart"></i>Buy Theme</a></div></Link>
-           <div class="mail"><a href="#"><i class="fa fa-envelope"></i>Quick Question </a></div>  
-        </>
-    )
-}
+  return (
+    <>
+      <div className="cart">
+        {" "}
+        <Link to="/cart">
+          <i className="fa fa-shopping-cart"></i>Buy Theme
+        </Link>
+      </div>
+      <div className="mail">
+        {" "}
+        <Link to="/messenger">
+          <i className="fa fa-envelope"></i>Quick Question{" "}
+        </Link>{" "}
+      </div>
+    </>
+  );
+};
 
-export default stickyitem
+export default stickyitem;

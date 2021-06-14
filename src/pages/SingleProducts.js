@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import defaultBcg from "../assets/img/wallpaper2.png";
-import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../context";
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from "../components/Navbar/Navbar";
 
 import StyledHero from "../components/StyledHero";
 export default class SingleProduct extends Component {
@@ -13,7 +12,7 @@ export default class SingleProduct extends Component {
     console.log(this.props);
     this.state = {
       slug: this.props.match.params.slug,
-      defaultBcg: defaultBcg
+      defaultBcg: defaultBcg,
     };
   }
   static contextType = ProductContext;
@@ -44,14 +43,14 @@ export default class SingleProduct extends Component {
       extras,
       chocolate,
       cheese,
-      images
+      images,
     } = product;
-    const [main, ...defaultImages] = images;
+    const [...defaultImages] = images;
     console.log(defaultImages);
 
     return (
       <>
-      <Navbar/>
+        <Navbar />
         <StyledHero img={this.state.defaultBcg}>
           <Banner title={`${name} product`}>
             <Link to="/products" className="btn-primary">
